@@ -1,0 +1,17 @@
+{
+  "name": "Youtube modal closing extension",
+  "manifest_version": 2,
+  "version": "1.0.0",
+
+  "description": "Just a chrome extension that closes youtube modal (which currently stops videos from playing)",
+  "browser_action": {
+    "default_title": "Youtube modal closer"
+  },
+
+  "author": "Norbert Kruk",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": ["tabs", "background", "https://*.youtube.com/*"]
+}
